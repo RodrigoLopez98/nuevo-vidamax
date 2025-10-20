@@ -34,3 +34,8 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
+
+# Configuration files (if you want to ignore them)
+package.json
+package-lock.json
+tsconfig.json
