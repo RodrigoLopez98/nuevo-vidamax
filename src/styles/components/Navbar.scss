@@ -1,0 +1,155 @@
+@use '../variables' as *;
+
+.banner-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5px 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 38px;
+    position: relative;
+
+    @media (max-width: 768px) {
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 50px;
+            width: auto;
+
+            @media (max-width: 768px) {
+                height: 30px;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &--desktop {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__menu-item {
+        padding: 10px 20px;
+        background: none;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 18px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+
+        @media (max-width: 768px) {
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            background-color: rgba(0, 99, 65, 0.1);
+        }
+
+        &.active {
+            background-color: $verde-accion;
+            color: $blanco;
+
+            &:hover {
+                background-color: $verde-accion;
+            }
+        }
+    }
+
+    &__mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 0 0 15px 15px;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    &__mobile-menu-item {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        background: none;
+        border: none;
+        color: $verde-oscuro;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 99, 65, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: rgba(0, 99, 65, 0.05);
+        }
+
+        &.active {
+            background-color: $verde-accion;
+            color: $blanco;
+            font-weight: 700;
+
+            &:hover {
+                background-color: $verde-accion;
+            }
+        }
+
+        &::after {
+            content: '→';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $verde-claro;
+            font-size: 14px;
+        }
+
+        &.active::after {
+            color: $blanco;
+        }
+    }
+}

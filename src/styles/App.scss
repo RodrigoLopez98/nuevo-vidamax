@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+.app {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background-color: $blanco;
+
+    // Layout en grid o flex para secciones
+    display: flex;
+    flex-direction: column;
+
+    // Media queries
+    @media (max-width: 768px) {}
+
+    @media (max-width: 480px) {
+        font-size: 14px; // Ajuste global de fuente
+    }
+}
