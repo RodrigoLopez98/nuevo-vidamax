@@ -1,0 +1,168 @@
+{
+    "app": {
+        "title": "Nuevo Vidamax"
+    },
+    "navbar": {
+        "menu": {
+            "home": "Inicio",
+            "newInsurance": "Nuevos Seguros",
+            "helpCenter": "Centro de ayuda",
+            "policies": "Pólizas"
+        },
+        "mobile": {
+            "menuToggle": "Abrir menú",
+            "menuIcon": "Menú"
+        },
+        "breadcrumb": {
+            "home": "Inicio",
+            "insurance": "Nuestros Seguros",
+            "vidamax": "Nuevo Vidamax"
+        },
+        "tabs": {
+            "description": "Descripción",
+            "plans": "Planes",
+            "claim": "¿Tienes un siniestro?",
+            "conditions": "Condiciones"
+        }
+    },
+    "description": {
+        "title": "Cuidamos a tu familia",
+        "subtitle": "Apoyo económico para tu familia en caso de fallecimiento natural o accidental.",
+        "backButton": "Regresar",
+        "faqs": {
+            "whatCovers": {
+                "question": "¿Qué cubre el seguro?",
+                "answer": {
+                    "economicBenefit": "• Beneficio económico para tu familia de acuerdo al plan elegido y a edad que tengas al momento de contratarlo, en caso de fallecimiento natural.",
+                    "funeralService": "• Servicio funerario que incluye:",
+                    "legalAdvice": "1. Asesoría legal",
+                    "bodyTransport": "2. Traslado del cuerpo",
+                    "wakeRoom": "3. Sala de velación",
+                    "burial": "4. Entierro con féretro",
+                    "debtSettlement": "• Liquidación de deudas"
+                }
+            },
+            "howToPay": {
+                "question": "¿Cómo puedes pagarlo?",
+                "answer": "Depende del período de crédito en cualquier sucursal de Banco Azteca o Elektra al momento de adquirir el crédito (préstamo o bien de consumo)."
+            },
+            "duration": {
+                "question": "¿Cuanto dura el seguro?",
+                "answer": "Misma del credito solicitado (préstamo o bien de consumo)."
+            },
+            "requirements": {
+                "question": "¿Qué necesitas para contratar?",
+                "answer": {
+                    "age": "• Tener entre 18 y 75 años.",
+                    "credit": "• Contar con un Préstamo Personal o Crédito al Consumo."
+                }
+            },
+            "exclusions": {
+                "question": "¿Qué no cubre el seguro?",
+                "answer": "Suicidio (revisar las exclusiones en las condiciones generales)."
+            }
+        }
+    },
+    "siniestro": {
+        "title": "Pasos a seguir en caso de siniestro",
+        "subtitle": "Selecciona el tipo de cobertura o plan que contrataste y consulta lo que debes hacer:",
+        "tabs": {
+            "death": "Fallecimiento",
+            "funeral": "Sevicio Funerario"
+        },
+        "deathSteps": {
+            "step1": "El beneficiario acude a la sucursal Elektra o Banco Azteca más cercana y reportar el fallecimiento del Asegurado",
+            "step2": "El ejecutivo registra el siniestro en el portal de Sinestros de Seguros Azteca",
+            "step3": "El ejecutivo imprime el check list de los documentos así como el formato de declaración y los entrega al beneficiario",
+            "step4": "El beneficiario reúne todos los documentos y acude a la sucursal para entregarlos",
+            "step5": "El ejecutivo recibe, revisa, registra y envía los documentos a Seguros Azteca",
+            "step6": "Seguros Azteca recibe los documentos y emite dictamen",
+            "step7": "Seguros Azteca en caso de ser procedente se indemniza al beneficiario y en caso contrario se entregan las cartas de rechazo o se solicita documentación faltante"
+        },
+        "responseTime": "Tiempo de respuesta: 17 días hábiles una vez que los documentos están completos",
+        "funeralSteps": {
+            "step1": "El solicitante llama a la línea de Seguros Azteca al 1720 9854.",
+            "step2": "El ejecutivo valida que la póliza siga vigente",
+            "step3": "El ejecutivo solicita los siguientes datos al solicitante:",
+            "step3Data": {
+                "deceasedName": "Nombre completo del finado",
+                "policyNumber": "Número de póliza",
+                "applicantName": "Nombre del solicitante",
+                "contactPhones": "Teléfonos de contacto del solicitante"
+            },
+            "step4": "El ejecutivo transfiere la llamada al prestador del Servicio Funerario.",
+            "step4Note": "Inicia Servicio funerario",
+            "step5": "El solicitante deberá presentar la siguiente documentación a la funeraria:",
+            "step5Docs": {
+                "deathCertificate": "Certificado de defunción",
+                "idDeceased": "Identificación Oficial del Finado",
+                "receipt": "Se te entregará un \"acuse de recibo\" de documentos impreso"
+            }
+        },
+        "documents": {
+            "death": {
+                "title": "Lista de documentos en caso de fallecimiento",
+                "items": {
+                    "id": "Identificación oficial vigente del beneficiario",
+                    "deathCertificate": "Acta de defunción",
+                    "curp": "CURP del beneficiario",
+                    "policy": "Póliza o número de póliza",
+                    "creditProof": "Estado de cuenta o comprobante del crédito (si aplica)"
+                }
+            },
+            "funeral": {
+                "title": "Lista de documentos en servicio funerario",
+                "items": {
+                    "claimForm": "Formato de reclamación: Solicitud de Indemnización firmado (Se entrega en tienda)",
+                    "claimFormType": "Original",
+                    "deathAct": "Acta de defunción del asegurado",
+                    "deathActType": "Original",
+                    "healthCertificate": "Certificado de defunción expedido por la Secretaría de Salud",
+                    "healthCertificateType": "Copia",
+                    "insuredId": "INE del asegurado por ambos lados",
+                    "insuredIdType": "Copia",
+                    "marriageAct": "Acta de matrimonio",
+                    "marriageActType": "Original",
+                    "insuredBirth": "Acta de nacimiento del asegurado",
+                    "insuredBirthType": "Original",
+                    "beneficiaryBirth": "Acta de nacimiento del beneficiario",
+                    "beneficiaryBirthType": "Original",
+                    "beneficiaryId": "INE de beneficiario por ambos lados legible",
+                    "beneficiaryIdType": "Copia",
+                    "addressProof": "Comprobante de domicilio del beneficiario asignado (No mayor a 3 meses)",
+                    "addressProofType": "Copia",
+                    "accidentalDeath": "En caso de muerte accidental, se requieren las actuaciones del ministerio público que comprueben: Fe de hechos, identificación de cadáver, dictamen de necropsia y los resultados de los exámenes toxicológicos y de alcohol",
+                    "accidentalDeathType": "Original",
+                    "important": "Importante: Seguros Azteca se reserva el derecho de solicitar documentación adicional a la lista de documentos para evaluar el siniestro."
+                }
+            }
+        },
+        "sentences": {
+            "articlel": "El ",
+            "boldBeneficiary": "beneficiario",
+            "boldExecutor": "ejecutivo",
+            "boldSolicitant": "solicitante",
+            "boldSegurosAzteca": "Seguros Azteca",
+            "sentenceOne": " acude a la sucursal Elektra o Banco Azteca más cercana y reportar el fallecimiento del Asegurado",
+            "sentenceTwo": " registra el siniestro en el portal de Sinestros de Seguros Azteca",
+            "sentenceThree": " imprime el check list de los documentos así como el formato de declaración y los entrega al beneficiario",
+            "sentenceFour": " reúne todos los documentos y acude a la sucursal para entregarlos",
+            "sentenceFive": " recibe, revisa, registra y envía los documentos a Seguros Azteca",
+            "sentenceSix": " recibe los documentos y emite dictamen",
+            "sentenceSeven": " en caso de ser procedente se indemniza al beneficiario y en caso contrario se entregan las cartas de rechazo o se solicita documentación faltante",
+            "sentenceEight": " llama a la línea de Seguros Azteca al 1720 9854.",
+            "sentenceNine": " valida que la póliza siga vigente",
+            "sentenceTen": " solicita los siguientes datos al solicitante",
+            "sentenceEleven": " transfiere la llamada al prestador del Servicio Funerario.",
+            "sentenceTwelve": " deberá presentar la siguiente documentación a la funeraria"
+        }
+    },
+    "planes": {
+        "title": "Planes",
+        "subtitle": "Información sobre los diferentes planes disponibles para Nuevo Vidamax."
+    },
+    "condiciones": {
+        "title": "Condiciones",
+        "subtitle": "Detalles sobre las condiciones generales del seguro Nuevo Vidamax."
+    }
+}

@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
+import { getTexts } from '../utils/texts';
 import logo from '@assets/images/logo_seguros_azteca.png';
 import menuIcon from '@assets/icons/menu.svg';
 import '../styles/components/Navbar.scss';
 
-type MenuOption = 'Inicio' | 'Nuevos Seguros' | 'Centro de ayuda' | 'Pólizas';
-
 const Navbar: React.FC = () => {
-    const [selectedOption, setSelectedOption] = useState<MenuOption>('Inicio');
+    const texts = getTexts();
+    const [selectedOption, setSelectedOption] = useState<string>(texts.navbar.menu.home);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const menuOptions: MenuOption[] = ['Inicio', 'Nuevos Seguros', 'Centro de ayuda', 'Pólizas'];
+    const menuOptions = [
+        texts.navbar.menu.home,
+        texts.navbar.menu.newInsurance,
+        texts.navbar.menu.helpCenter,
+        texts.navbar.menu.policies
+    ];
 
     const handleMenuToggle = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const handleMenuOptionClick = (option: MenuOption) => {
+    const handleMenuOptionClick = (option: string) => {
         setSelectedOption(option);
         setIsMobileMenuOpen(false);
     };
@@ -43,9 +48,9 @@ const Navbar: React.FC = () => {
             <button
                 className="banner-navbar__menu-toggle"
                 onClick={handleMenuToggle}
-                aria-label="Abrir menú"
+                aria-label={texts.navbar.mobile.menuToggle}
             >
-                <img src={menuIcon} alt="Menú" />
+                <img src={menuIcon} alt={texts.navbar.mobile.menuIcon} />
             </button>
 
             {/* Menú móvil desplegable */}

@@ -1,0 +1,54 @@
+@use '../variables' as *;
+
+.descripcion {
+    color: $gris-oscuro;
+
+    h2 {
+        font-size: 1.8em;
+        color: $verde-oscuro;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 30px;
+        color: $gris-oscuro;
+    }
+
+    .faq-section {
+        margin-bottom: 30px;
+    }
+
+    .back-button {
+        background-color: transparent;
+        border: 2px solid $verde-oscuro;
+        color: $verde-oscuro;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $verde-oscuro;
+            color: $blanco;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        .back-button {
+            width: 100%;
+            padding: 12px 20px;
+        }
+    }
+}

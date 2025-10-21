@@ -4,16 +4,22 @@ $verde-oscuro: #006341;
 $verde-accion: #41af28;
 $verde-claro: #CFE7C5;
 $gris-oscuro: #393939;
+$gris-claro: #9b9b9b;
+$gris-medio: #666;
 $blanco: #FFFFFF;
 $rosa: #EF3C9A;
+$hover-claro: #f7f7f7;
+$hover-verde: #f0fff0;
+$sombra: rgba(0, 0, 0, 0.06);
 
 @mixin button-style {
-  background-color: $verde-oscuro;
-  color: $blanco;
+  background-color: $blanco;
+  color: $verde-oscuro;
+  border: 2px solid $verde-accion;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
 
   &:hover {
-    background-color: color.adjust($verde-oscuro, $lightness: -10%);
+    background-color: $hover-verde;
   }
 }

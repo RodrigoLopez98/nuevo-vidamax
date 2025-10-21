@@ -1,0 +1,84 @@
+@use '../variables' as *;
+
+.siniestro {
+    padding: 20px;
+    color: $gris-oscuro;
+
+    h1 {
+        color: $verde-oscuro;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .instructions {
+        margin-top: 20px;
+
+        ol,
+        ul {
+            line-height: 1.8;
+        }
+
+        .ordered-steps {
+            padding-left: 22px;
+
+            li {
+                margin-bottom: 14px;
+
+                strong {
+                    font-weight: 700;
+                }
+
+                ul {
+                    margin-top: 8px;
+                    padding-left: 18px;
+                    list-style: disc;
+                }
+            }
+        }
+
+        .response-time {
+            margin-top: 8px;
+        }
+
+        .doc-sub {
+            color: $gris-claro;
+            margin-top: -8px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+    }
+
+    .family-image {
+        max-width: 40%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .tabs {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .family-image {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        ol,
+        ul {
+            font-size: 0.9em;
+        }
+    }
+}

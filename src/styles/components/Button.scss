@@ -1,0 +1,30 @@
+@use '../variables' as *;
+
+.custom-button {
+    @include button-style;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+
+    &.active {
+        background-color: #f0fff0;
+        color: $verde-oscuro;
+        border: 2px solid $verde-accion;
+        font-weight: 700;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

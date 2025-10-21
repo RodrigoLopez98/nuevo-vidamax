@@ -1,0 +1,20 @@
+@use '../variables' as *;
+
+.planes {
+    padding: 20px;
+    color: $gris-oscuro;
+
+    h1 {
+        color: $verde-oscuro;
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}
