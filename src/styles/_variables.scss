@@ -1,0 +1,19 @@
+@use "sass:color";
+
+$verde-oscuro: #006341;
+$verde-accion: #41af28;
+$verde-claro: #CFE7C5;
+$gris-oscuro: #393939;
+$blanco: #FFFFFF;
+$rosa: #EF3C9A;
+
+@mixin button-style {
+  background-color: $verde-oscuro;
+  color: $blanco;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: color.adjust($verde-oscuro, $lightness: -10%);
+  }
+}
