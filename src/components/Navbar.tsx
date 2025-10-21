@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
     return (
         <div className="banner-navbar">
             <div className="banner-navbar__logo">
-                <img src={logo} alt="Seguros Azteca" />
+                <img src={logo} alt="Seguros Azteca" loading="lazy" />
             </div>
 
             {/* Menú desktop */}
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
                 onClick={handleMenuToggle}
                 aria-label={texts.navbar.mobile.menuToggle}
             >
-                <img src={menuIcon} alt={texts.navbar.mobile.menuIcon} />
+                <img src={menuIcon} alt={texts.navbar.mobile.menuIcon} loading="lazy" />
             </button>
 
             {/* Menú móvil desplegable */}

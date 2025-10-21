@@ -16,7 +16,7 @@ const App: React.FC = () => (
                     <AppRoutes />
                 </div>
                 <div className="content-right">
-                    <img src={familyImage} alt="Familia sonriendo junta" className="family-image" />
+                    <img src={familyImage} alt="Familia sonriendo junta" className="family-image" loading="lazy" />
                 </div>
             </div>
         </div>

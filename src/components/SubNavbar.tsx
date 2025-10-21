@@ -19,7 +19,7 @@ const SubNavbar: React.FC = () => {
 
             <div className="sub-navbar-header">
                 <div className="icon-container">
-                    <img src={pulseIcon} alt="Pulse icon" />
+                    <img src={pulseIcon} alt="Pulse icon" loading="lazy" />
                 </div>
                 <h2 className="title">{texts.app.title}</h2>
             </div>
